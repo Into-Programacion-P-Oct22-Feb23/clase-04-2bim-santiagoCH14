@@ -20,10 +20,15 @@ public class Ejemplo01 {
         
         String miCiudad = obtenerCiudadMayuscula("Loja");
         System.out.printf("%s\n", miCiudad);
+        
+        String mensaje_R = obtenerNombre();
+        System.out.printf("%s\n", mensaje_R);
+        
+        System.out.printf("%s\n", obtenerNombre());
     }
     
     
-    public String obtenerCiudadMayuscula(String m){
+    public static String obtenerCiudadMayuscula(String m){
         String m2 = m.toUpperCase();
         return m2;
     }
@@ -33,6 +38,7 @@ public class Ejemplo01 {
     }
     
     public static String obtenerNombre(){
+        
         return "Luis";
     }
     
