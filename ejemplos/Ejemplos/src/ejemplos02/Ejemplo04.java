@@ -5,6 +5,8 @@
  */
 package ejemplos02;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -13,7 +15,13 @@ public class Ejemplo04 {
 
     public static void main(String[] args) {
         // 
-        obtenerSuma(10, 30); // se invoca al método (procedimiento) obtenerSuma
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Ingrese valor primero");
+        int primerValor = entrada.nextInt();
+        
+        System.out.println("Ingrese valor segundo");
+        int segundoValor = entrada.nextInt();
+        obtenerSuma(primerValor, segundoValor); 
         
     }
         
